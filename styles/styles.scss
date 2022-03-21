@@ -1,0 +1,172 @@
+// COLOURS
+$background-color: #f2d7b4;
+$borders-color: #df9881;
+$cards-color: #ece6d2;
+$text-color: rgb(88, 148, 156);
+
+// SCREEN STYLES
+.screen {
+  font-family: "Poppins", sans-serif;
+  color: $text-color;
+  background-color: $background-color;
+}
+
+// PAGE POSITION
+.container {
+  &__head {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  &__favourites {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+// SEARCH STYLES
+.search {
+  &__header {
+    font-size: 45px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    line-height: 10px;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  &__input {
+    color: $text-color;
+    font-size: 23px;
+    font-weight: 600;
+    border: 4px solid $borders-color;
+    background-color: $cards-color;
+    margin: 40px;
+    padding: 5px 5px 5px 15px;
+    height: 50px;
+    width: 400px;
+  }
+  &__button {
+    color: $text-color;
+    font-weight: 800;
+    letter-spacing: 2px;
+    border: 4px solid $text-color;
+    background-color: $borders-color;
+    margin: 40px 0px 40px 50px;
+    padding: 10px 15px 10px 15px;
+  }
+}
+
+// FAVOURITE BLOCK
+.favourite {
+  &__wrapper {
+    border: 6px solid $borders-color;
+    background-color: $text-color;
+    margin-top: 100px;
+  }
+  &__title {
+    padding: 20px 20px 10px 20px;
+    font-size: 25px;
+    font-weight: 800;
+    color: $borders-color;
+  }
+  &__details {
+    &--list {
+      color: $cards-color;
+      font-size: 20px;      
+      &-item {
+        padding: 10px 20px 10px 20px; 
+      }
+    }
+    &--remove-button {
+      color: $borders-color;
+      font-weight: 800;
+      margin-right: 10px;
+      border: none;
+      background-color: $text-color;
+    }
+  }
+}
+
+// DISPLAY BREEDS
+.info {
+  &__container {
+    margin: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 20px;   
+  }
+  &__title {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    font-size: 30px;
+    font-weight: 800;
+    color: $borders-color;
+  }  
+  &__details {
+    padding: 10px;
+    color: $text-color;
+    width: 95%;
+  }
+  &__button {
+    &--container {
+      display: flex;
+      justify-content: flex-end;
+      margin: 20px 50px 10px 0px;     
+    }
+    &--favourite {
+      color: $text-color;
+      font-size: 20px;
+      font-weight: 600;
+      letter-spacing: 2px;
+      border: 4px solid $text-color;
+      background-color: $borders-color;     
+      padding: 8px 12px 8px 12px;
+    }    
+  }
+  &__image {
+    &--container {
+      display: flex;
+      justify-content: center;
+      margin-top: 50px;
+      margin-bottom: 0px;
+    }
+    &--cat {
+      max-width: 300px;
+      max-height: 300px;
+      object-fit: cover;
+    }    
+  }
+}
+
+// NO BREEDS MESSAGE
+.no-breeds-message {
+  &__container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  &__text {
+    font-size: 25px;
+    font-weight: 600;
+  }
+}
+
+// ADDING FAVOURITE TWICE MESSAGE
+.already-saved-message {
+  &__container {
+    display: flex;
+    justify-content: end;
+    margin: 50px 120px 0px 0px;
+  }
+  &__text {
+    color: $borders-color;
+    font-size: 20px;
+    font-weight: 500;
+  }
+}
